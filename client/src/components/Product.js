@@ -22,7 +22,7 @@ class Product extends React.Component {
 						${price.toFixed(2)}
 					</small>
 				</h2>
-				<button onClick={() => addToCart({ productId: product.id, userId: 1 })}>Add to Cart</button>
+				<button onClick={() => addToCart({ productId: product.id, productPrice: product.price, userId: 1 })}>Add to Cart</button>
 			</div>
 		)
 	}

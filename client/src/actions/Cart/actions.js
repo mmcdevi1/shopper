@@ -13,9 +13,13 @@ const actions = {
     }
   },
 
-  removeItem: function () {
+  removeItem: function (index, price) {
   	return dispatch => {
-
+      dispatch({
+        type: actions.REMOVE_ITEM,
+        index,
+        price 
+      })
   	}
   }
 }
